@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="{% static '/gifts/css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static '/gifts/css/grid.css' %}">
+    <link rel="stylesheet" href="{% static '/gifts/css/main.css' %}">
+
+  </head>
+  <body>
+    <div class="row">
+
+          <header>
+            <nav>
+              <div class="row">
+                <img class="logo" src="{% static 'gifts/images/pexels-photo-1874636.jpeg' %}" alt="Omnifood logo">
+                <ul class="main-nav">
+                  <li class=""><a href="#">Food delivery</a></li>
+                  <li class=""><a href="#">How it works</a></li>
+                  <li class=""><a href="#">Our cities</a></li>
+                  <li class=""><a href="#">Sign Up</a></li>
+                </ul>
+              </div>
+            </nav>
+            <div class="hero-text-box">
+              <h1>Goodbye junk food.<br>Hello super healthy meals.</h1>
+              <a class="btn btn-full" href="#">I’m hungry</a>
+              <a class="btn btn-ghost" href="#">Show me more</a>
+            </div>
+          </header>
+    </div>
+
+    {% block content %}
+    {% endblock %}
+
+  </body>
+</html>
